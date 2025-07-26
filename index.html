@@ -80,8 +80,8 @@
                 <a href="#help" class="text-gray-700 hover:text-amber-800">Кому помогаем</a>
                 <a href="#donate" class="text-gray-700 hover:text-amber-800">Пожертвовать</a>
             </nav>
-            <button class="md:hidden text-gray-700">
-                <i class="fas fa-bars text-xl"></i>
+            <button class="md:hidden text-amber-700 hover:text-amber-900 transition-colors duration-200">
+                <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </header>
@@ -156,6 +156,13 @@
                             <p class="font-medium">"От [Имя] для TheHope"</p>
                         </div>
                     </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-amber-700 mt-1"></i>
+                        <div>
+                            <p class="text-sm text-gray-600">Для полной прозрачности:</p>
+                            <p class="font-medium">Все квитанции о поступлении средств публикуются в <a href="https://t.me/thehopeotchety" class="text-amber-700 hover:underline" target="_blank">нашем Telegram-канале</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -173,13 +180,23 @@
         </section>
 
         <!-- Отчёты -->
-        <section class="section mb-10 bg-white p-4">
-            <h2 class="text-xl font-bold text-amber-900 mb-4 border-b pb-2">Отчёты</h2>
+        <section class="section mb-10 bg-white p-4 border-2 border-amber-300 rounded-lg">
+            <h2 class="text-xl font-bold text-amber-900 mb-4 border-b pb-2">📢 Подпишитесь на наш Instagram!</h2>
             <div class="space-y-4">
-                <p>Мы публикуем все фото- и видеоотчёты о нашей работе в Instagram. Вы можете увидеть, как ваша помощь меняет жизни животных.</p>
-                <a href="https://instagram.com/thehope_astana" class="btn-secondary block w-full py-3 rounded-lg text-white font-medium text-center">
-                    <i class="fab fa-instagram mr-2"></i> Смотреть в Instagram
-                </a>
+                <p class="font-medium text-amber-800">Только подписчики видят полные отчёты о нашей работе!</p>
+                <p>Мы ежедневно публикуем:</p>
+                <ul class="list-disc pl-5 space-y-2 text-sm">
+                    <li>Фото- и видеоотчёты о помощи животным</li>
+                    <li>Истории спасённых животных</li>
+                    <li>Анонсы волонтёрских мероприятий</li>
+                    <li>Эксклюзивный контент для подписчиков</li>
+                </ul>
+                <div class="bg-amber-50 p-3 rounded-lg text-center">
+                    <p class="text-sm mb-2">Подпишитесь, чтобы видеть как ваша помощь меняет жизни животных!</p>
+                    <a href="https://instagram.com/thehope_astana" class="btn-primary block w-full py-3 rounded-lg text-white font-medium">
+                        <i class="fab fa-instagram mr-2"></i> @thehope_astana
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -300,10 +317,13 @@
             nav.classList.toggle('absolute');
             nav.classList.toggle('top-16');
             nav.classList.toggle('right-4');
-            nav.classList.toggle('bg-white');
+            nav.classList.toggle('bg-amber-50');
             nav.classList.toggle('p-4');
             nav.classList.toggle('rounded-lg');
-            nav.classList.toggle('shadow-md');
+            nav.classList.toggle('shadow-lg');
+            nav.classList.toggle('border');
+            nav.classList.toggle('border-amber-200');
+            nav.classList.toggle('space-y-3');
         });
     </script>
 </body>
